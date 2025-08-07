@@ -1,0 +1,9 @@
+# Data Governance
+
+The Data Governance is the process of managing availability, usability, consistency, security of an enterprise system data. Data Governance includes a wide range of aspects but the main ones are:
+
+- **Data Management** is a collection of technologies, processes and policies which are focused on keeping the enterprise data consistent, reliable and unified for all department, thus all parties have a same view/version of the data. This includes database modeling, master data management, metadata management, data integration and pipelines.
+- **Data Quality** includes process which are focused on keep the data quality in a high level, which is especially important for deriving business intelligence from it. This includes periodically scanning the data for issues/mismatches. Setting appropriate constraints and standardizing the data.
+- **Data Security** is focuses on keeping sensitive data protected from external or internal unauthorized access. This includes managing access roles, encryption, network security, audit logging and automatic incident alerts.
+- **Data Compliance** is a set of internal and external rules and policies that the data and the created system around it should match with. This includes detailed policies documentation, regulatory mapping and readiness for audits.
+- **Data Stewardship** is a process of constantly keeping the data aligned with above mentioned rules and points. It is mainly about assigning clear roles to people who are responsible for keeping the data consistent, with high quality, secure and aligned with internal and external regulations.
