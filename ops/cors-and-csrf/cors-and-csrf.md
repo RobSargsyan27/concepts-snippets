@@ -3,7 +3,7 @@
 CORS (Cross-Origin Resource Sharing) and CSRF (Cross-Site Request Forgery) are two vulnerabilities that can be used by attackers to trick users to submit authorized but unintended requests. The following diagram shows an example of how it can happen:
   
 
-![CSRF Diagram](./img/csrf-diagram.png)
+![CSRF Diagram](img/csrf-diagram.png)
 
 The CSRF and CORS policies are meant to prevent attacker from accessing users’ resources or tricking users to processes unintended requests. 
 
@@ -21,11 +21,11 @@ The requests are divided into two types - complex and simple. There are a number
 
 In case of simple request, the browser makes the actual request, gets the answer back and before display to the user, it checks if `Access-Control-Allow-Origin` response header contains the origin or is a wildcard. If so, then the request is satisfied, otherwise a CORS error is thrown.
 
-![CORS Check Diagram](./img/cors-check-diagram.png)
+![CORS Check Diagram](img/cors-check-diagram.png)
 
 In case of complex request, an initial preflight request is sent with the method `OPTIONS`  to check if the domain is allowed to send the actual request. This is done because the complex request can change the state in the server even though the origin isn’t allowed.
 
-![CORS Check Diagram](./img/cors-check-diagram2.png)
+![CORS Check Diagram](img/cors-check-diagram2.png)
 
 As mentioned earlier the CORS policy only checks the AJAX requests, thus the embedded html requests that can be found in <link>, <script>, <src>, <img>, etc. are not being checked. This happens due to the embedded nature of the HTML. Nowadays it is almost impossible to imagine even static websites that don’t use any third-party scripts, styling, images or other assets (BootStrap, JQuery, Freepik, Fontawsome, Google Fonts, Youtube). That’s why the embedded requests are meant to be done to servers that don’t share the same domain or don’t server the website’s domain. Otherwise we would have to host all the required resources, which is not great, especially when we can make use of CDN. 
 

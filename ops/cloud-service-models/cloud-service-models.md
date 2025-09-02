@@ -1,6 +1,6 @@
 # Cloud-Service Models
 
-![Hero Image](./img/hero.png)
+![Hero Image](img/hero.png)
 
 The main difference between the models is **the level of abstraction** and in some cases the **pricing** that the models provide. Or in other words, different models provide the developers with the different level of control over their underlying infrastructure.
 

@@ -414,4 +414,4 @@ shard0 [direct: secondary] test> rs.status()
 
 Here is an example query response run on the cluster:
 
-![Documents Sample Screenshot](./img/documents_sample_screenshot.png)
+![Documents Sample Screenshot](img/documents_sample_screenshot.png)
