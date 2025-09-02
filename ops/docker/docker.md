@@ -10,9 +10,9 @@ It aims to reduce “It works on my machine.” conflicts. Thus when using docke
 
 The docker provides us with an abstract layer between specific OS and application development/deployment environment. This ensures that everyone is on the same page and use the same configuration, dependencies and resources.
 
-![Docker Advantage](./img/docker-advantages-1.png)
+![Docker Advantage](img/docker-advantages-1.png)
 
-![Docker Advantage](./img/docker-advantages-2.png)
+![Docker Advantage](img/docker-advantages-2.png)
 
 Without Docker:
 
@@ -34,7 +34,7 @@ The concept of containerization make use of three important Linux features:
 - **Namespaces**: “Namespaces” is a linux kernel feature which provides process(es) with their abstract environment. The abstraction level depends on the namespace type but the idea is that processes get their isolated view on the system resources.
 - **Union File System**: UnionFS is a Linux filesystem service that allows multiple directories (filesystems) to be merged into a single unified view. This is achieved by stacking them as layers—typically with one writable layer (called the upper layer) and one or more read-only layers (lower layers). If the same file exists on the multiple layers, the uppermost layer’s file is being used.
     
-    ![Union File System](./img/union-file-system-diagram.png)
+    ![Union File System](img/union-file-system-diagram.png)
     
 
 # Docker System Components
@@ -59,7 +59,7 @@ The Linux VM is only present for `macOS` and `Windows` . The VM is required in o
 
 </aside>
 
-![Docker Architecture](./img/docker-architecture.png)
+![Docker Architecture](img/docker-architecture.png)
 
 <aside>
 📌
@@ -72,9 +72,9 @@ The Linux VM is only present for `macOS` and `Windows` . The VM is required in o
 
 A container is created from an image. An image is a single merged view of multiple filesystems, where all the layers (filesystems) are read-only except the uppermost layer. Whenever we delete a container any changes made to the uppermost layer are also being discarded. 
 
-![Container Layers Example](./img/container-file-system-diagram.png)
+![Container Layers Example](img/container-file-system-diagram.png)
 
-![Docker Volume Example](./img/docker-volume-diagram.png)
+![Docker Volume Example](img/docker-volume-diagram.png)
 
 If we want the data to be persisted when a container is deleted then we need to define either docker volumes or bind mount. It’s also useful in case we want to have a single data entity to which multiple separate containers can have an access. 
 
@@ -99,7 +99,7 @@ Dockerfile is a set of instructions which creates a docker image. Each instructi
 
 `.dockerignore`  is a file which can be placed in the same directory with Dockerfile and prevents a set of resources from being copied into the image during the image build process. 
 
-![Docker Ignore Example](./img/dockerigonre-diagram.png)
+![Docker Ignore Example](img/dockerigonre-diagram.png)
 
 ## Docker Instructions
 
@@ -167,7 +167,7 @@ When a working directory is not set, the default one it the `root` . This isn’
 
 Docker supports caching of the built image layers for the further builds. This means if you build the exact same image twice, second time will be much faster because the built image layers were cached. In case you change something that effects a layer, from that layer all the subsequent layers will be rebuild. It is suggested to first copy rarely changing files in case you need to do some actions on that files before copying the whole source code (e.g package*.json) because it will support enhanced caching.
 
-![Docker Cache Example](./img/docker-cache-diagram.png)
+![Docker Cache Example](img/docker-cache-diagram.png)
 
 ### Use a Non-Root User
 
@@ -221,7 +221,7 @@ EXPOSE 8080
 
 The `COPY —link`  is a Dockerfile instruction which significantly changes how the files are being copied into the image. In some cases this `—link`  option can be very useful (e.g multi-stage build). This instruction creates a standalone copy of the dir which is independent from any base image or previous layers, thus can be used as a component layer in multiple places. 
 
-![Docker Link Comparison](./img/docker-link-example.png)
+![Docker Link Comparison](img/docker-link-example.png)
 
 <aside>
 🔗
@@ -412,6 +412,6 @@ networks:
 
 There are two main spheres that you need to pay attention in order to eventually have a secure container.
 
-![Runtime Security](./img/runtime-security.png)
+![Runtime Security](img/runtime-security.png)
 
-![Image Security](./img/image-security.png)
+![Image Security](img/image-security.png)

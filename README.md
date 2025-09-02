@@ -10,11 +10,11 @@ reference. It’s a mix of ideas and insights I’ve gathered that could be usef
     - [Cloud Service Models](ops/cloud-service-models/cloud-service-models.md)
     - [CORS and CSRF](ops/cors-and-csrf/cors-and-csrf.md)
     - [Managing Domain Registration](ops/managing-domain-registration/managing-domain-registration.md)
-    - [Docker](./docker/docker.md)
+    - [Docker](ops/docker/docker.md)
 - Data & Analytics
     - [Data Governance](data-analytics/data-governance/data-governance.md)
     - [Data Warehousing](data-analytics/data-warehousing/data-warehousing.md)
-    - [Kimball Methodology](./kimball-methodology/kimball-methodology.md)
+    - [Kimball Methodology](data-analytics/kimball-methodology/kimball-methodology.md)
 - Databases
     - [NoSQL DBMS](./nosql-dbms/nosql-dbms.md)
     - MongoDB
