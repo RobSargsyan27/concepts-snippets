@@ -94,7 +94,7 @@ This design pattern basically provides the same functionality as `Array of Ances
 
 # Nested Sets
 
-![Nested Sets Diagram](./img/nested_sets_diagram.png)
+![Nested Sets Diagram](img/nested_sets_diagram.png)
 
 The idea of this design pattern is to mark each tree node with two values, fist one means the node’s number from root-node to the leaf-node and second one means the node’s number from the leaf-node to the root-node or in other words each node is being marked in the round-trip from root-node to the last leaf-node. 
 For example:

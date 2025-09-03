@@ -16,10 +16,10 @@ reference. It’s a mix of ideas and insights I’ve gathered that could be usef
     - [Data Warehousing](data-analytics/data-warehousing/data-warehousing.md)
     - [Kimball Methodology](data-analytics/kimball-methodology/kimball-methodology.md)
 - Databases
-    - [NoSQL DBMS](./nosql-dbms/nosql-dbms.md)
+    - [NoSQL DBMS](databases/nosql-dbms/nosql-dbms.md)
     - MongoDB
-        - [MongoDB Compound Indexes](mongodb/compound-index/mongodb-compound-index.md)
-        - [MongoDB Sharded Cluster](mongodb/sharded-cluster/mongodb-sharded-cluster.md)
-        - [MongoDB Model Tree Structures](mongodb/model-tree-structures/model-tree-structures.md)
+        - [MongoDB Compound Indexes](databases/mongodb/compound-index/mongodb-compound-index.md)
+        - [MongoDB Sharded Cluster](databases/mongodb/sharded-cluster/mongodb-sharded-cluster.md)
+        - [MongoDB Model Tree Structures](databases/mongodb/model-tree-structures/model-tree-structures.md)
 - Other
-  - [Computer Systems](./computer-systems/computer-systems.md)
+  - [Computer Systems](other/computer-systems/computer-systems.md)

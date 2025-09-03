@@ -37,7 +37,7 @@ Usually every programming language comes with its own set of system-calls-wrappe
 
 Frequently asked questions’ answers:
 
-![QA](./img/qa.png)
+![QA](img/qa.png)
 
 ## Processes
 
@@ -156,8 +156,8 @@ Not often used pages can be copied to `swap space` on SSD/HDD storage to make sp
 
 The process of mapping the virtual address to physical one according to lecture slides:
 
-![Questions](./img/questions.png)
+![Questions](img/questions.png)
 
 Note: The below is true in case of 6-bit pages.
 
-![Memory Tables](./img/memory-tables.png)
+![Memory Tables](img/memory-tables.png)
