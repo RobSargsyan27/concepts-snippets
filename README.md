@@ -11,6 +11,7 @@ reference. It’s a mix of ideas and insights I’ve gathered that could be usef
       - [Divide and Conquer Algorithmic Paradigm](algorithms/algorithmic-paradigms/divide-and-conquer-algorithmic-paradigm.md)
       - [Brute Force Algorithmic Paradigm](algorithms/algorithmic-paradigms/brute-force-algorithmic-paradigm.md)
       - [Greedy Algorithmic Paradigm](algorithms/algorithmic-paradigms/greedy-algorithmic-paradigm.md)
+      - [Master Method](algorithms/algorithmic-paradigms/master-method/master-method.md)
 - Operations
     - [Cloud Service Models](ops/cloud-service-models/cloud-service-models.md)
     - [CORS and CSRF](ops/cors-and-csrf/cors-and-csrf.md)
